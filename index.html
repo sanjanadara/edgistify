@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Edgistify</title>
 </head>
 
 <body>
@@ -28,17 +28,15 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Solutions</a>
+                        <a class="nav-link" href="#services">Solutions</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact us </a>
-                    </li>
+
                 </ul>
 
                 <div class="mx-2">
-                    <button class=" mx-2 btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginmodal">SCHEDULE A CALL</button>
-                    <button class="mx -2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signupms  odal">PARTNER WITH US</button>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginmodal">SCHEDULE A CALL</button>
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signupmodal">PARTNER WITH US</button>
                 </div>
                 <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -71,25 +69,7 @@
                                         <label for="product" class="form-label">Product to be stored</label>
                                         <input type="text" class="form-control" id="product">
                                     </div>
-                                    <!--<div class="container">
-                                        <div class="row">
-                                            <div class='col-sm-6'>
-                                                <div class="form-group">
-                                                    <div class='input-group date' id='datetimepicker1'>
-                                                        <input type='text' class="form-control" />
-                                                        <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <script type="text/javascript">
-                                                $(function() {
-                                                    $('#datetimepicker1').datetimepicker();
-                                                });
-                                            </script>*/
-                                        </div>
-                                    </div>-->
+
 
 
 
@@ -129,31 +109,25 @@
                                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                     </div>
-
-
-
                                     <div class="mb-3">
-                                        <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                              Services
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <li><a class="dropdown-item" href="#">Warehouse Operations</a></li>
-                                                <li><a class="dropdown-item" href="#">Pallet and Racks</a></li>
-                                                <li><a class="dropdown-item" href="#">Last mile delivery</a></li>
-                                                <li><a class="dropdown-item" href="#">Manpower</a></li>
-                                                <li><a class="dropdown-item" href="#">Others</a></li>
+                                        <label for="cars">Choose a car:</label>
+
+                                        <select name="cars" id="cars">
+                                        <option value="volvo">Warehouse operations</option>
+                                        <option value="saab">Last mile delivery</option>
+                                        <option value="mercedes">Pallet and Racks</option>
+                                        <option value="audi">Manpower</option>
+                                        <option value="audi">Others</option>
+
+                                        </select>
 
 
-
-                                            </ul>
-                                        </div>
                                     </div>
+
+                                </form>
 
                             </div>
 
-
-                            </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -164,7 +138,6 @@
             </div>
 
         </div>
-        </div>
     </nav>
     <div class="mx-5" id="carouselExampleDark" class="carousel carousel-light slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -173,13 +146,13 @@
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-item active" data-bs-interval="1000">
                 <img src="edg.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="1000">
                 <img src="contact.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
 
@@ -187,22 +160,25 @@
             </div>
             <div class="carousel-item">
                 <img src="companies.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block" style="color:black">
+                    <p style="font-size: 24px; color: red; font-weight:600 ;">Trusted by more than 200 companies</p>
+
 
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-prev" style="width:auto;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        <button class="carousel-control-next" style="width:auto;" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </button>
     </div>
 
-    <div class="container my-4">
+    <div class="container width=100% my-4" style="padding:0px 0px 0px 0px">
         <div class="row">
             <div class="col-md-4">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -250,7 +226,7 @@
 
         <div id="about" class="container my-4">
             <div class="align-content-center">
-                <h1 class="mb-0 ">How are we different?</h1>
+                <h1 class="text-center mb-0 ">How are we different?</h1>
             </div>
             <div class="row my-4">
 
@@ -320,14 +296,188 @@
 
             </div>
 
-
-
-            <div class="container">
-                <footer class="container">
-                    <p class="float-end"><a href="#">Back to top</a></p>
-                    <p>© 2020–2021 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-                </footer>
+            <div id="services" class="jumbotron jumbotron-fluid" style="padding:10px 10px 10px 10px;">
+                <div class="container">
+                    <h1 class="display-4 text-center">---SERVICES---</h1>
+                </div>
             </div>
+            <div class="my-4 jumbotron jumbotron-fluid" style="background-color: gainsboro; padding:10px 10px 10px 10px ;">
+                <div class="container">
+                    <div class="my-4" style="float:left;">
+                        <img src="bas.png" class="mb-0" style="padding: 10px 10px 10px 10px;">
+                    </div>
+                    <div class="mx-5" style="padding: 20px 20px 20px 20px;;">
+                        <h1 class="display-4 mx-lg-4 ">D2C & Ecommerce Fulfillment</h1>
+
+                        <p class="my-4 mx-5 lead">D2C & e-commerce businesses juggle multiple tasks. From building versatile product shelves to guaranteeing timely delivery. Edgistify can make the journey easier for you. We enable swift processes through our warehousing and fulfillment
+                            network making your product at lightning-fast speed & in the most cost-effective way.</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="my-4 jumbotron jumbotron-fluid" style=" padding:10px 10px 10px 10px ;">
+                <div class="container">
+                    <div class="my-4" style="float:right;">
+                        <img src="bas.png" class="mb-0" style="padding: 10px 10px 10px 10px;">
+                    </div>
+                    <div class="mx-5" style="padding: 20px 20px 20px 20px;;">
+                        <h1 class="display-4  ">Enterprise Warehousing Fulfillment</h1>
+
+                        <p class="my-4  lead">Edgistify can meet enterprise-level storage and Omnichannel fulfillment requirements. Our robust network provides storage solutions in multiple locations empowering you to decrease the time frame of your deliverability. Escalate
+                            your market presence with our distinctive Fulfillment services at minimum costs.</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="my-4 jumbotron jumbotron-fluid" style="background-color: gainsboro; padding:10px 10px 10px 10px ;">
+                <div class="container">
+                    <div class="my-4" style="float:left;">
+                        <img src="hom.png" class="mb-0" style="padding: 10px 10px 10px 10px;">
+                    </div>
+                    <div class="mx-5" style="padding: 20px 20px 20px 20px;;">
+                        <h1 class="display-4 mx-lg-4 ">Start-Up Logistics Support
+                        </h1>
+
+                        <p class="my-4 mx-5 lead">From managing inventory to fulfilling orders, a start-up has to be tremendously cautious at every step. Edgistify can be a part of your growth journey by making it smooth as silk. Our complete suite of logistics services can help
+                            you buckle up for the market.
+                        </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="jumbotron jumbotron-fluid" style="padding:10px 10px 10px 10px;">
+                <h1 class="display-4 text-center">Our institutional investors & mentors </h1>
+                <div class=" my-4 mx-5  row">
+                    <div class=" d-flex justify-content-center">
+                        <img src="schain.jpeg" class=" mb-0" style="padding: 10px 10px 10px 10px;">
+                        <img src="pvent.png" class="mb-0 mx-5" style="padding: 10px 10px 10px 10px;">
+
+                    </div>
+                    <div class=" my-4 d-flex justify-content-center">
+                        <img src="RAJESH.JPEG" class=" mb-0" style="padding: 10px 10px 10px 10px;">
+                        <img src="JITHEN.JPEG" class="mb-0 mx-5" style="padding: 10px 10px 10px 10px;">
+
+                    </div>
+                    <div class=" my-1 d-flex ">
+                        <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rajesh Ranavat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jitendra Mahajan
+                        </h4>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <div>
+                <div class="flex-1 row" style="text-align: center;">
+                    <p class="py-2 mb-0" style="
+                            background-color: #212529;
+                            font-size: 30px;
+                            font-weight: bolder;
+                            color: white;">FAQ</p>
+                </div>
+                <div class="flex-1 row" style="
+                        height: 400px;
+                        overflow-y: scroll;
+                        ">
+                    <div style="border: 1px solid #ddd;">
+                        <p class="mt-1" style="font-weight: 600;">
+                            What is Ecommerce fulfillment ?
+                        </p>
+                        <p>
+                            It refers to the streamlined processes involved in getting the goods ordered online delivered at the customers doorstep.
+                        </p>
+                    </div>
+                    <div style="border: 1px solid #ddd;">
+                        <p class="mt-1" style="font-weight: 600;">
+                            Why is it important for the businesses to have Ecommerce fulfillment services in place ?
+                        </p>
+                        <p>
+                            Speedy delivery offered by e-commerce giants along with the increase in online customers due to the COVID pandemic has increased the importance of e-commerce fulfillment to meet the growing customer demands.
+                        </p>
+                    </div>
+                    <div style="border: 1px solid #ddd;">
+                        <p class="mt-1" style="font-weight: 600;">
+                            Does Edgistify have any tie-ups with third party service providers to ease the shipping processes with reasonable cost ?
+                        </p>
+                        <p>
+                            Approximately more than 700+ service providers are associated with us. We have built a network of 52000+ warehouses.
+                        </p>
+                    </div>
+                    <div style="border: 1px solid #ddd;">
+                        <p class="mt-1" style="font-weight: 600;">
+                            In which locations does Edgistify have its fulfillment centres ?
+                        </p>
+                        <p>
+                            Edgistify has a warehouse network spread across 150+ locations in India.
+                        </p>
+                    </div>
+                    <div style="border: 1px solid #ddd;">
+                        <p class="mt-1" style="font-weight: 600;">
+                            What if the inventory level required for my business keeps on fluctuating ?
+                        </p>
+                        <p>
+                            Edgistify offers a scalable platform to meet the fluctuating demands of the customers
+                        </p>
+                    </div>
+                    <div style="border: 1px solid #ddd;">
+                        <p class="mt-1" style="font-weight: 600;">
+                            What if I urgently need to contact the Ecommerce fulfillment center ?
+                        </p>
+                        <p>
+                            Edgistify has a 24/7 dedicated support & resource staff available both online & at the warehouse. Hence, you can get in touch with them in case of any emergency.
+                        </p>
+                    </div>
+                    <div style="border: 1px solid #ddd;">
+                        <p class="mt-1" style="font-weight: 600;">
+                            What is Ecommerce fulfillment ?
+                        </p>
+                        <p>
+                            It refers to the streamlined processes involved in getting the goods ordered online delivered at the customer’s doorstep.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer float-end bg-dark mt-5">
+                <div class="w-100 mb-1 row">
+                    <div class="col-md-5 m-2 ">
+                        <p class="w-50"><a class="navbar-brand" href="#" style="color: white;">Edgistify</a></p>
+                        <p class='w-50' style="color: white;">Edgistify is India's Largest Plug & Play Warehousing & fulfillment Network helping D2C brands, SME's, Legacy Businesses, E-commerce sellers provide Amazon & Flipkart like next day delivery.</p>
+                    </div>
+                    <div class="col-md-3 m-2">
+                        <p style="color: white;"><strong>Company</strong> </p>
+                        <p style="color: white;">Mentors</p>
+                        <p style="color: white;">Team</p>
+                        <p style="color: white;">Campus</p>
+                        <p style="color: white;">Contact Us</p>
+                    </div>
+                    <div class="col-md-3 m-2">
+                        <p style="color: white;"><strong>News Room</strong></p>
+                        <p style="color: white;">Awards</p>
+                        <p style="color: white;">Media & mentions</p>
+                    </div>
+                </div>
+                <div style="border-top: 3px solid white">
+
+                    <p class="float-end" style="color:white"><a href="#">Back to top</a></p>
+                    <p style="color:white">© 2020–2021 OptiSupply Chain Solution Pvt Ltd | All Rights Reserved <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+                </div>
+            </footer>
+
+
+
+
 
 
 
